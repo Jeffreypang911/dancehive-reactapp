@@ -1,45 +1,49 @@
 <h1 align="center">
 	<img
 		width="300"
-		alt="The Lounge"
+		alt="Dance Hive"
 		src="https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-vertical-transparent-bg.svg?sanitize=true">
 </h1>
 
 <h3 align="center">
-	Modern web IRC client designed for self-hosting
+	Online learning and entertainment platform
 </h3>
 
 <p align="center">
 	<strong>
-		<a href="https://thelounge.chat/">Website</a>
-		•
-		<a href="https://thelounge.chat/docs">Docs</a>
-		•
-		<a href="https://demo.thelounge.chat/">Demo</a>
+		<a href="https://dancehive.app/">Website</a>
 	</strong>
-</p>
-<p align="center">
-	<a href="https://demo.thelounge.chat/"><img
-		alt="#thelounge IRC channel on freenode"
-		src="https://img.shields.io/badge/freenode-%23thelounge-415364.svg?colorA=ff9e18&style=flat-square"></a>
-	<br>
-	<a href="https://yarn.pm/thelounge"><img
-		alt="npm version"
-		src="https://img.shields.io/npm/v/thelounge.svg?style=flat-square&maxAge=3600"></a>
-	<a href="https://travis-ci.com/thelounge/thelounge"><img
-		alt="Travis CI Build Status"
-		src="https://img.shields.io/travis/com/thelounge/thelounge/master.svg?style=flat-square&maxAge=60"></a>
-	<a href="https://david-dm.org/thelounge/thelounge"><img
-		alt="Dependencies Status"
-		src="https://img.shields.io/david/thelounge/thelounge.svg?style=flat-square&maxAge=3600"></a>
-	<a href="https://npm-stat.com/charts.html?package=thelounge&from=2016-02-12"><img
-		alt="Total downloads on npm"
-		src="https://img.shields.io/npm/dt/thelounge.svg?colorB=007dc7&style=flat-square&maxAge=3600"></a>
 </p>
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/thelounge/thelounge.github.io/master/img/thelounge-screenshot.png" width="550">
 </p>
+
+## Proposed Tech Stack
+
+**Frontend**
+* React 
+* Mobx-state-tree
+
+**Third Party**
+* Firebase
+* Auth0
+
+**React Modules**
+* autho0-js
+* firebase
+* reactstrap
+* bootstrap
+
+**Hosting**
+* Amazon S3 (Video HLS)
+* Firebase
+
+## Related Projects
+
+* **React Dance Hive Video Player.** A modification to react-player that adds useful features for training physical activities (mirroring, multiple angles, slow-down, speed-up). 
+[react-player-dancehive](https://github.com/melchua/dh-video-player).
+
 
 ## Overview
 
@@ -49,13 +53,13 @@
 * **Responsive interface.** The client works smoothly on every desktop, smartphone and tablet.
 * **Synchronized experience.** Always resume where you left off no matter what device.
 
-To learn more about configuration, usage and features of The Lounge, take a look at [the website](https://thelounge.chat).
+To learn more about configuration, usage and features of Dance Hive, take a look at [the website](https://dancehive.app).
 
-The Lounge is the official and community-managed fork of [Shout](https://github.com/erming/shout), by [Mattias Erming](https://github.com/erming).
+Dance Hive is the official react-app of dancehive.app by [Mel Chua](https://github.com/melchua).
 
 ## Installation and usage
 
-The Lounge requires [Node.js](https://nodejs.org/) v6 or more recent.
+Dance Hive requires [Node.js](https://nodejs.org/) v6 or more recent.
 [Yarn package manager](https://yarnpkg.com/) is also recommended.  
 If you want to install with npm, `--unsafe-perm` is required for a correct install.
 
@@ -68,7 +72,7 @@ Run this in a terminal to install (or upgrade) the latest stable release from
 yarn global add thelounge
 ```
 
-If you already have The Lounge installed globally, use the following command to update it:
+If you already have Dance Hive installed globally, use the following command to update it:
 
 ```sh
 yarn global upgrade thelounge
@@ -88,7 +92,7 @@ thelounge --help
 
 ### Running from source
 
-The following commands install and run the development version of The Lounge:
+The following commands install and run the development version of Dance Hive:
 
 ```sh
 git clone https://github.com/thelounge/thelounge.git
@@ -105,7 +109,7 @@ your own risk. It is also not recommended to run this as root.
 
 ## Development setup
 
-Simply follow the instructions to run The Lounge from source above, on your own
+Simply follow the instructions to run Dance Hive from source above, on your own
 fork.
 
 Before submitting any change, make sure to:
