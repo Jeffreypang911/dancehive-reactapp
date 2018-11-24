@@ -3,6 +3,7 @@ import { Provider } from 'mobx-react';
 import './App.css';
 import RootStore from './models/RootStore';
 import AppRouter from './routers/AppRouter';
+import './firebase/firebase';
 
 
 class App extends Component {
