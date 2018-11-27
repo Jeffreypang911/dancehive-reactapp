@@ -11,6 +11,7 @@ import MusicPage from '../components/EditionPages/MusicPage';
 import EditionListView from '../components/EditionPages/EditionListView';
 import ShortsPage from '../components/EditionPages/ShortsPage';
 import WebSeriesPage from '../components/EditionPages/WebSeriesPage';
+import SeriesUploadPage from '../pages/admin/SeriesUploadPage';
 
 class AppRouter extends Component {
     render() {        
@@ -31,6 +32,7 @@ class AppRouter extends Component {
                     <Route path="/story/:id" render={(props) => <Story {...props} />} />
                     <Route path="/editions/music/:slug" component={EditionListView} />                    
                     <Route path="/editions/shorts/:slug" component={EditionListView} />                    
+                    <Route path="/admin/series-upload" component={SeriesUploadPage} />
                     <Route component={NotFoundPage}/>
                 </Switch>
             </div>     
