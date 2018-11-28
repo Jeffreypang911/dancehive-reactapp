@@ -2,7 +2,7 @@
 	<img
 		width="300"
 		alt="Dance Hive"
-		src="https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-vertical-transparent-bg.svg?sanitize=true">
+		src="https://github.com/melchua/dancehive-reactapp/design_assets/dh-logobox.png">
 </h1>
 
 <h3 align="center">
