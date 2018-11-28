@@ -10,6 +10,20 @@ class SeriesUploadPage extends Component {
         description: '',
     }
 
+    uploadWidget = () => {
+        window.cloudinary.openUploadWidget(
+            {
+                cloud_name: 'dance-hive',
+                upload_preset: 'series_posters',
+                tags: ['poster'],
+                sources: ['local','url','google_photos','facebook','image_search']
+            },
+            function(error, result) {
+                console.log("Last upload result", result);
+            }
+        )
+    }
+
     handleChange = (e) => {
         const { target } = e;
         const { name } = target;
@@ -38,7 +52,6 @@ class SeriesUploadPage extends Component {
                         <Input 
                             name="seriesName" 
                             placeholder="ie. Sensual Fundamentals"
-                            // value={ seriesName }
                             onChange={ (e) => {
                                 this.handleChange(e);
                             }}
@@ -54,17 +67,9 @@ class SeriesUploadPage extends Component {
                             }}
                         />
                     </FormGroup>
-                    <FormGroup>
-                        <Label for="seriesPoster">Poster URL</Label>
-                        <Input 
-                            type="url" 
-                            name="seriesPoster" 
-                            placeholder="ie. http://www.image.com/image.jpg"
-                            onChange={ (e) => {
-                                this.handleChange(e);
-                            }} 
-                        />
-                    </FormGroup>
+                    
+                    <Button color="secondary" onClick={ () => {this.uploadWidget()}}>Upload Poster</Button>
+                    
                     <FormGroup>
                         <Label for="description">Description</Label>
                         <Input 
@@ -76,6 +81,7 @@ class SeriesUploadPage extends Component {
                             }} 
                         />                        
                     </FormGroup>
+                    
                     <Button color="primary">Submit</Button>
                 </Form>
             </div>
