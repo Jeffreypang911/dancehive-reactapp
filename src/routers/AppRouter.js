@@ -12,6 +12,7 @@ import EditionListView from '../components/EditionPages/EditionListView';
 import ShortsPage from '../components/EditionPages/ShortsPage';
 import WebSeriesPage from '../components/EditionPages/WebSeriesPage';
 import SeriesUploadPage from '../pages/admin/SeriesUploadPage';
+import logo from '../assets/img/logos/dh-logo-hor.png';
 
 class AppRouter extends Component {
     render() {        
@@ -19,10 +20,8 @@ class AppRouter extends Component {
             <BrowserRouter>
             <div>
                 <Header> 
-                    <HeaderText>
-                        <Link to="/">StoryHive</Link>
-                    </HeaderText>
-                    <EditionMenu />
+                    <img src={logo} alt='Logo' width="400px"/>
+                    {/* <EditionMenu /> */}
                 </Header>
                 <Switch>
                     <Route path="/" component={LandingPage} exact={true}/>

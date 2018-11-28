@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import StoryList from './StoryList';
-import Slide from './Hero/Slide';
 
 class LandingPage extends Component {    
     render() {
         return (
             <div>
-                <Slide image="https://www.booooooom.com/wp-content/uploads/2018/09/storyhive-amp.jpg" />
-                <StoryList />
+                <video autoPlay loop id="video-background" muted plays-inline>
+                    <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4"/>
+                </video>                
+                {/* <StoryList /> */}
             </div>
             )
     };
