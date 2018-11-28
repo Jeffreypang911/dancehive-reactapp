@@ -2,7 +2,7 @@
 	<img
 		width="300"
 		alt="Dance Hive"
-		src="https://github.com/melchua/dancehive-reactapp/tree/master/design_assets/dh-logobox.png">
+		src="https://raw.githubusercontent.com/melchua/dancehive-reactapp/tree/master/design_assets/dh-logobox.png">
 </h1>
 
 <h3 align="center">
