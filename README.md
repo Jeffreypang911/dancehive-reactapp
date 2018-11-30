@@ -34,8 +34,11 @@
 * firebase
 
 **Hosting**
-* Firebase
 * Cloudinary (images and video)
+* Netlify (ReactApp hosting, no db)
+
+**SEO**
+* Prerender.io
 
 ## Related Projects
 
