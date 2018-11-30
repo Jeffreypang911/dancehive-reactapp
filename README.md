@@ -29,8 +29,7 @@
 **React Modules**
 * autho0-js
 * firebase
-* reactstrap
-* bootstrap
+* material-ui
 * firebase
 
 **Hosting**
