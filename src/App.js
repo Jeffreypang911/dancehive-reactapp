@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'mobx-react';
 import './App.css';
+import 'typeface-roboto';
 import RootStore from './models/RootStore';
 import AppRouter from './routers/AppRouter';
 

@@ -14,7 +14,7 @@ import * as firebase from 'firebase';
   db.settings({ timestampsInSnapshots: true});
 
 
-  const docRef = db.collection("series").doc("SuKEtFpGVfRfk73BkxYU").collection("videos");
+  // const docRef = db.collection("series").doc("SuKEtFpGVfRfk73BkxYU").collection("videos");
 
   export { firebase, db as default };
 

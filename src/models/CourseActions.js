@@ -26,7 +26,6 @@ export function createCourseActions() {
                     }
                     courses.push(dataWithId);
                 });
-                console.log(courses);
 
                 //2. Populate the data into the store
                 courses.forEach((

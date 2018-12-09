@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
 import Story from '../components/Story';
 import NotFoundPage from '../components/NotFoundPage';
@@ -34,4 +34,4 @@ class AppRouter extends Component {
    }
 }
 
-export default inject('storyListStore', 'editionStore')(observer(AppRouter));
+export default inject('courseStore')(observer(AppRouter));
