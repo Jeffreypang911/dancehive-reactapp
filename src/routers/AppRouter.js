@@ -10,6 +10,7 @@ import ShortsPage from '../components/EditionPages/ShortsPage';
 import WebSeriesPage from '../components/EditionPages/WebSeriesPage';
 import SeriesUploadPage from '../pages/admin/SeriesUploadPage';
 import ButtonAppBar from '../components/ButtonAppBar';
+import Dashboard from '../pages/Dashboard';
 
 class AppRouter extends Component {
     render() {        
@@ -19,6 +20,7 @@ class AppRouter extends Component {
                 <ButtonAppBar />
                 <Switch>
                     <Route path="/" component={LandingPage} exact={true}/>
+                    <Route path="/dashboard" component={Dashboard} exact={true}/>
                     <Route path="/editions/music" component={MusicPage} exact={true}/>
                     <Route path="/editions/shorts" component={ShortsPage} exact={true}/>
                     <Route path="/editions/web-series" component={WebSeriesPage} exact={true}/>
