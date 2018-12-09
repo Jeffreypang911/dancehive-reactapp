@@ -28,6 +28,7 @@ class App extends Component {
     const stores = {
       rootStore: rootStore,
       storyListStore: rootStore.storyListStore,
+      courseStore: rootStore.courseStore,
       editionStore: rootStore.editionStore,
       userStore: rootStore.userStore
     }

@@ -13,16 +13,17 @@ import * as firebase from 'firebase';
   var db = firebase.firestore();
   db.settings({ timestampsInSnapshots: true});
 
-  db.collection('test').add({ test: 'tester'});
-
 
   const docRef = db.collection("series").doc("SuKEtFpGVfRfk73BkxYU").collection("videos");
 
-  docRef.get().then(function(querySnapshot) {
-    querySnapshot.forEach(function(doc) {
-      console.log(doc.id, " => ", doc.data());
-    });
-  });
+  export { firebase, db as default };
+
+
+  // docRef.get().then(function(querySnapshot) {
+  //   querySnapshot.forEach(function(doc) {
+  //     console.log(doc.id, " => ", doc.data());
+  //   });
+  // });
 
 //   docRef.get().then(function(doc) {
 //     if (doc.exists) {
@@ -36,12 +37,12 @@ import * as firebase from 'firebase';
 // });
 
 
-db.collection("series").get().then(function(querySnapshot) {
-  querySnapshot.forEach(function(doc) {
-      // doc.data() is never undefined for query doc snapshots
-      console.log(doc.id, " => ", doc.data());
-  });
-});
+// db.collection("series").get().then(function(querySnapshot) {
+//   querySnapshot.forEach(function(doc) {
+//       // doc.data() is never undefined for query doc snapshots
+//       console.log(doc.id, " => ", doc.data());
+//   });
+// });
 
 
 
