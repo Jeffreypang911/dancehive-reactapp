@@ -6,16 +6,28 @@
 </h1>
 
 <h3 align="center">
-	Online learning and entertainment platform
+	Online learning and entertainment platform for Dance lessons: the Netflix of Dance Instruction. Release date: March 1, 2019.
 </h3>
 
-<p align="center">
+<!-- <p align="center">
 	<strong>
 		<a href="https://dancehive.app/">Website</a>
 	</strong>
-</p>
+</p> -->
 
-## Proposed Tech Stack
+## Proposed MVP Features
+
+* **Modern Custom Video Player.** Mirroring, Multi-Angles, Speed Control.
+* **Administrator Series Creation** Series are easily created by registered administrators.
+* **Cross platform.** It doesn't matter what OS you use, it just works.
+* **Responsive interface.** The client works smoothly on every desktop, smartphone and tablet.
+
+<!-- To learn more about configuration, usage and features of Dance Hive, take a look at [the website](https://dancehive.app). -->
+
+Dance Hive is the official react-app of dancehive.app by [Mel Chua](https://github.com/melchua).
+
+
+## Tech Stack
 
 **Frontend**
 * React 
@@ -23,18 +35,7 @@
 
 **Third Party**
 * Firebase
-* Auth0
 * Cloudinary
-
-**React Modules**
-* autho0-js
-* firebase
-* material-ui
-* firebase
-
-**Hosting**
-* Cloudinary (images and video)
-* Netlify (ReactApp hosting, no db)
 
 **SEO**
 * Prerender.io
@@ -44,21 +45,15 @@
 * **React Dance Hive Video Player.** A modification to react-player that adds useful features for training physical activities (mirroring, multiple angles, slow-down, speed-up). 
 [react-player-dancehive](https://github.com/melchua/dh-video-player).
 
+## Future Functionality
+* **Mobile App.** React-native app featuring a custom video player that allows multiple angles
+* **Progressive Learning.** User progress tracking, accomplishment badges
+* **User Feedback** Forum / messaging system to foster an online community, annotations.
 
-## Overview
-
-* **Modern Custom Video Player.** Mirroring, Multi-Angles, Speed Control.
-* **Administrator Series Creation** Series are easily created by registered administrators.
-* **Cross platform.** It doesn't matter what OS you use, it just works wherever Node.js runs.
-* **Responsive interface.** The client works smoothly on every desktop, smartphone and tablet.
-
-To learn more about configuration, usage and features of Dance Hive, take a look at [the website](https://dancehive.app).
-
-Dance Hive is the official react-app of dancehive.app by [Mel Chua](https://github.com/melchua).
 
 ## Installation and usage
 
-Dance Hive requires [Node.js](https://nodejs.org/) v6 or more recent.
+<!-- Dance Hive requires [Node.js](https://nodejs.org/) v6 or more recent. -->
 [Yarn package manager](https://yarnpkg.com/) is also recommended.  
 If you want to install with npm, `--unsafe-perm` is required for a correct install.
 
