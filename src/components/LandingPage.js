@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
-import StoryList from './StoryList';
 
-class LandingPage extends Component {    
+class LandingPage extends Component {
     render() {
-        return (
-            <div id="videoDiv">
-                <div id="videoBlock">
-                    <video autoPlay preload loop muted playsInline id="video">
-                        <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4"/>
-                    </video>    
-                </div>    
-                {/* <StoryList /> */}
-                <p>I wonder where this goes</p>
-            </div>
+        const courses = this.props.courseStore.courses;
+        if (this.props.courseStore.isCoursesLoaded) {
+            return (
+                <div id="videoDiv">
+                    <div id="videoBlock">
+                        <video autoPlay loop muted playsInline id="video">
+                            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
             )
+        } else {
+            return (
+                <div>
+                    Loading
+                </div>
+            )
+        }
     };
 }
-export default inject("storyListStore")(observer(LandingPage));
+export default inject('courseStore')(observer(LandingPage));

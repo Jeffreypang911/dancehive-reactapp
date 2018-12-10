@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
 import Story from '../components/Story';
 import NotFoundPage from '../components/NotFoundPage';
@@ -10,6 +10,7 @@ import ShortsPage from '../components/EditionPages/ShortsPage';
 import WebSeriesPage from '../components/EditionPages/WebSeriesPage';
 import SeriesUploadPage from '../pages/admin/SeriesUploadPage';
 import ButtonAppBar from '../components/ButtonAppBar';
+import Dashboard from '../pages/Dashboard';
 
 class AppRouter extends Component {
     render() {        
@@ -19,6 +20,7 @@ class AppRouter extends Component {
                 <ButtonAppBar />
                 <Switch>
                     <Route path="/" component={LandingPage} exact={true}/>
+                    <Route path="/dashboard" component={Dashboard} exact={true}/>
                     <Route path="/editions/music" component={MusicPage} exact={true}/>
                     <Route path="/editions/shorts" component={ShortsPage} exact={true}/>
                     <Route path="/editions/web-series" component={WebSeriesPage} exact={true}/>
@@ -34,4 +36,4 @@ class AppRouter extends Component {
    }
 }
 
-export default inject('storyListStore', 'editionStore')(observer(AppRouter));
+export default inject('courseStore')(observer(AppRouter));
